@@ -303,7 +303,8 @@ body {
         font-family: 'Ubuntu', sans-serif;
         border-radius: 20px;
         position: relative;
-        overflow: hidden;
+        max-height: 80vh;
+        overflow: initial;
         justify-content: center;
         align-items: center;
     }
@@ -320,11 +321,11 @@ body {
 
     .img-container {
         position: relative;
-        width: 200px;
+        width: 130px;
         z-index: 2;
         margin-left: 0px;
         margin-bottom: 20px;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     .wave {
@@ -337,7 +338,7 @@ body {
     }
 
     .container h2 {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         font-size: 32px;
     }
 
@@ -381,12 +382,12 @@ body {
         position: relative;
         z-index: 2;
         font-size: 25px;
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
     .container p {
         position: relative;
-        margin-top: 40px;
+        margin-top: 20px;
         line-height: 1.5;
     }
 
