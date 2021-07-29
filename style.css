@@ -324,8 +324,8 @@ body {
         width: 130px;
         z-index: 2;
         margin-left: 0px;
-        margin-bottom: 20px;
-        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-top: 0px;
     }
 
     .wave {
