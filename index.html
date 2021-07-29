@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Wave Animation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-form">
+            <h2>Iniciar Sesión 🔓</h2>
+            <form class="formulario">
+                <div class="form-email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-password">
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <button class="btn-form" type="submit"><i class="fas fa-arrow-right"></i></button>
+                <p class="parrafo-form">¿No tienes todavía una cuenta? <span
+                        class="parrafo-form-span">¡Registrate!</span></p>
+            </form>
+        </div>
+        <div>
+            <img src="imagenes/hand-phone.png" alt="" class="img-container">
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave">
+            <path fill="#8ec5fc" fill-opacity="0.1"
+                d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+    <div class="container-mensaje-contraseña">
+        <i class="fas fa-times cruz-mensaje"></i>
+        <img src="imagenes/hand-saludo.png" alt="" class="mensaje-img">
+        <h2 class="mensaje-bienvenido">¡Bienvenido!</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave-mensaje">
+            <path fill="#866ba0" fill-opacity="1"
+                d="M0,128L40,149.3C80,171,160,213,240,197.3C320,181,400,107,480,80C560,53,640,75,720,101.3C800,128,880,160,960,154.7C1040,149,1120,107,1200,85.3C1280,64,1360,64,1400,64L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+            </path>
+        </svg>
+        <p class="mensaje-desarrollo">Desarrollado por <a href="http://agustincorbalan.com/"
+                target="_blank"><span>Agustin
+                    Corbalan</span></a></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
