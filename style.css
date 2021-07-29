@@ -289,7 +289,7 @@ body {
         background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
         display: flex;
         justify-content: center;
-        padding: 30px 20px 30px 20px;
+        padding: 0px 20px 0px 20px;
         align-items: center;
         overflow-x: hidden;
     }
@@ -391,6 +391,108 @@ body {
     }
 
     .container p span {
+        font-weight: bold;
+    }
+
+    .container-mensaje-contraseña {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: #735b8a;
+        color: white;
+        z-index: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: all 1s ease-in-out;
+    }
+
+    .container-mensaje-contraseña-active {
+        z-index: 5;
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .mensaje-bienvenido {
+        font-size: 48px;
+        z-index: 2;
+        margin-bottom: 0;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: all 1s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s;
+    }
+
+    .mensaje-bienvenido-active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .mensaje-img {
+        width: 150px;
+        margin-bottom: -20px;
+        margin-top: -100px;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: all 1s cubic-bezier(0.39, 0.575, 0.565, 1) 1s;
+    }
+
+    .mensaje-img-active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .wave-mensaje {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateY(0px);
+    }
+
+    .cruz-mensaje {
+        color: white;
+        font-size: 36px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 50px;
+        margin-right: 70px;
+        cursor: pointer;
+    }
+
+    .cruz-mensaje:hover {
+        animation-name: cruz-rotate;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes cruz-rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(180deg);
+        }
+    }
+
+    .mensaje-desarrollo {
+        font-size: 16px;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: all 1s cubic-bezier(0.39, 0.575, 0.565, 1) 2s;
+    }
+
+    .mensaje-desarrollo-active {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    .mensaje-desarrollo a {
+        text-decoration: none;
+        color: white;
         font-weight: bold;
     }
 
